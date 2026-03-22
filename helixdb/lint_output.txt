@@ -1,0 +1,32 @@
+﻿
+> helixdb@0.1.0 lint
+> eslint
+
+
+C:\Users\Hrishikesh Kali\helixdb\app\api\schema\route.ts
+  27:14  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Hrishikesh Kali\helixdb\app\dashboard\page.tsx
+   7:78  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  10:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Hrishikesh Kali\helixdb\app\login\page.tsx
+  13:5   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  32:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Hrishikesh Kali\helixdb\components\ChatBox.tsx
+   5:47  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  26:18  warning  'error' is defined but never used         @typescript-eslint/no-unused-vars
+
+C:\Users\Hrishikesh Kali\helixdb\components\Features.tsx
+  5:64  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Hrishikesh Kali\helixdb\components\StudioSection.tsx
+  37:77  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  37:99  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\Hrishikesh Kali\helixdb\lib\ai\explainResults.ts
+  7:60  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 11 problems (7 errors, 4 warnings)
+
