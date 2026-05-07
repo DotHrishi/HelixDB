@@ -37,16 +37,19 @@ export async function POST(req: Request) {
 
     const result = await pool.query(cleanSQL);
 
+    const dataToSend = result.command === 'SELECT' ? result.rows : { affectedRows: result.rowCount, command: result.command };
+
     return NextResponse.json({
       sql: cleanSQL,
-      data: result.rows,
-      explanation: await explainResult(prompt, result.rows),
+      data: dataToSend,
+      explanation: await explainResult(prompt, dataToSend),
     });
-  } catch (err) {
+  } catch (err: any) {
     console.error(err);
     return NextResponse.json({
       error: "Query Failed",
       sql,
+      explanation: await explainResult(prompt, null, err.message || JSON.stringify(err)),
     });
   }
 }

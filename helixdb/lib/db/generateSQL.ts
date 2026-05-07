@@ -17,7 +17,7 @@ export async function generateSQL(prompt: string, schema: string) {
             ${schema}
 
             Rules:
-            - Only generate SELECT queries
+            - Generate SELECT, INSERT, UPDATE, or DELETE queries as appropriate
             - Use PostgreSQL syntax
             - Return only SQL
             `

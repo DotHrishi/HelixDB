@@ -37,9 +37,9 @@ export default function ChatBox({addMessage}: any) {
     }
 
     return(
-        <div className="p-4 bg-[#000000] flex gap-2 w-full">
+        <div className="p-4 bg-white dark:bg-[#000000] border-t border-gray-200 dark:border-white/5 flex gap-2 w-full transition-colors">
             <input 
-                className="flex-1 bg-gray-900 shadow-[inset_0_0_10px_rgba(37,99,235,0.1)] border border-red-900 text-white p-2 px-4 rounded-full outline-none focus:ring-1 focus:ring-red-500 transition-all placeholder-gray-500"
+                className="flex-1 bg-gray-50 dark:bg-gray-900 shadow-sm dark:shadow-[inset_0_0_10px_rgba(37,99,235,0.1)] border border-gray-200 dark:border-red-900 text-gray-900 dark:text-white p-2 px-4 rounded-full outline-none focus:ring-1 focus:ring-red-500 transition-all placeholder-gray-400 dark:placeholder-gray-500"
                 placeholder="Ask your database......."
                 value={input}
                 onChange={(e)=>setInput(e.target.value)}
