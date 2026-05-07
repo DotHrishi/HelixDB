@@ -12,7 +12,7 @@ import { CTA } from '../components/CTA';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-red-500/30">
+    <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white selection:bg-red-500/30 transition-colors">
       <Navbar />
       <main>
         <Hero />
